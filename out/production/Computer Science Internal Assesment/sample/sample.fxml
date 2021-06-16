@@ -21,48 +21,47 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane fx:id="MyInfoPane1" prefHeight="300.0" prefWidth="380.0" visible="false">
+      <AnchorPane fx:id="MyInfoPane1" prefHeight="300.0" prefWidth="380.0">
          <children>
-            <Button layoutX="144.0" layoutY="225.0" mnemonicParsing="false" onAction="#MyInfo2Btn" prefHeight="34.0" prefWidth="77.0" text="Done" wrapText="true" />
-            <Label layoutX="104.0" layoutY="27.0" text="Name" />
-            <Label layoutX="84.0" layoutY="73.0" text="Last Name" />
-            <Label layoutX="111.0" layoutY="125.0" text="Gmail" />
-            <Label layoutX="32.0" layoutY="174.0" text="Year of Graduation" />
-            <TextField layoutX="162.0" layoutY="22.0" />
-            <TextField layoutX="162.0" layoutY="68.0" />
-            <TextField layoutX="162.0" layoutY="120.0" />
-            <DatePicker layoutX="162.0" layoutY="169.0" />
+            <Button layoutX="144.0" layoutY="225.0" mnemonicParsing="false" onAction="#ShowMyInfo2Btn" prefHeight="34.0" prefWidth="77.0" text="Done" wrapText="true" />
+            <Label fx:id="name" layoutX="104.0" layoutY="27.0" text="Name" />
+            <Label fx:id="lastName" layoutX="84.0" layoutY="73.0" text="Last Name" />
+            <Label fx:id="mail" layoutX="111.0" layoutY="125.0" text="Gmail" />
+            <Label fx:id="yeorOfGraduation" layoutX="32.0" layoutY="174.0" text="Year of Graduation" />
+            <TextField fx:id="nameIn" layoutX="162.0" layoutY="22.0" />
+            <TextField fx:id="lastNameIn" layoutX="162.0" layoutY="68.0" />
+            <TextField fx:id="mailIn" layoutX="162.0" layoutY="120.0" />
+            <DatePicker fx:id="yofgIn" layoutX="162.0" layoutY="169.0" />
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="MyInfoPane2" prefHeight="200.0" prefWidth="200.0">
+      <AnchorPane fx:id="MyInfoPane2" prefHeight="200.0" prefWidth="200.0" visible="false">
          <children>
             <ChoiceBox fx:id="courseButton2" layoutX="29.0" layoutY="63.0" prefHeight="26.0" prefWidth="99.0" />
-            <ChoiceBox layoutX="130.0" layoutY="61.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="hlStButton2" layoutX="130.0" layoutY="61.0" prefHeight="26.0" prefWidth="55.0" />
             <ChoiceBox fx:id="courseButton1" layoutX="26.0" layoutY="32.0" prefHeight="26.0" prefWidth="99.0" />
-
             <ChoiceBox fx:id="hlStButton1" layoutX="126.0" layoutY="31.0" prefHeight="26.0" prefWidth="55.0" />
             <ChoiceBox fx:id="courseButton3" layoutX="25.0" layoutY="93.0" prefHeight="26.0" prefWidth="99.0" />
             <ChoiceBox fx:id="courseButton5" layoutX="23.0" layoutY="154.0" prefHeight="26.0" prefWidth="99.0" />
-            <ChoiceBox layoutX="124.0" layoutY="152.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="hlStButton5" layoutX="124.0" layoutY="152.0" prefHeight="26.0" prefWidth="55.0" />
             <ChoiceBox fx:id="courseButton4" layoutX="28.0" layoutY="123.0" prefHeight="26.0" prefWidth="99.0" />
-            <ChoiceBox layoutX="128.0" layoutY="122.0" prefHeight="26.0" prefWidth="55.0" />
-            <ChoiceBox layoutX="125.0" layoutY="91.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="hlStButton4" layoutX="128.0" layoutY="122.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="hlStButton3" layoutX="125.0" layoutY="91.0" prefHeight="26.0" prefWidth="55.0" />
             <ChoiceBox fx:id="courseButton6" layoutX="24.0" layoutY="183.0" prefHeight="26.0" prefWidth="99.0" />
-            <ChoiceBox layoutX="126.0" layoutY="181.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="hlStButton6" layoutX="126.0" layoutY="181.0" prefHeight="26.0" prefWidth="55.0" />
             <Label layoutX="33.0" layoutY="14.0" text="Course" />
             <Label layoutX="127.0" layoutY="13.0" text="HL or ST" />
-            <ChoiceBox layoutX="189.0" layoutY="61.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="markButton2" layoutX="189.0" layoutY="61.0" prefHeight="26.0" prefWidth="55.0" />
             <ChoiceBox fx:id="markButton1" layoutX="185.0" layoutY="31.0" prefHeight="26.0" prefWidth="55.0" />
-            <ChoiceBox layoutX="183.0" layoutY="152.0" prefHeight="26.0" prefWidth="55.0" />
-            <ChoiceBox layoutX="187.0" layoutY="122.0" prefHeight="26.0" prefWidth="55.0" />
-            <ChoiceBox layoutX="184.0" layoutY="91.0" prefHeight="26.0" prefWidth="55.0" />
-            <ChoiceBox layoutX="184.0" layoutY="181.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="markButton5" layoutX="183.0" layoutY="152.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="markButton4" layoutX="187.0" layoutY="122.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="markButton3" layoutX="184.0" layoutY="91.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="markButton6" layoutX="184.0" layoutY="181.0" prefHeight="26.0" prefWidth="55.0" />
             <Label layoutX="197.0" layoutY="13.0" text="Mark" />
             <Label layoutX="58.0" layoutY="224.0" text="TOK" />
-            <ChoiceBox layoutX="181.0" layoutY="219.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="markButton7" layoutX="181.0" layoutY="219.0" prefHeight="26.0" prefWidth="55.0" />
             <Label layoutX="25.0" layoutY="265.0" text="Extended Essay" />
-            <ChoiceBox layoutX="181.0" layoutY="259.0" prefHeight="26.0" prefWidth="55.0" />
-            <Button layoutX="284.0" layoutY="246.0" mnemonicParsing="false" onAction="#ReturnToTabBtn" text="Done" />
+            <ChoiceBox fx:id="markButton8" layoutX="181.0" layoutY="259.0" prefHeight="26.0" prefWidth="55.0" />
+            <Button layoutX="284.0" layoutY="246.0" mnemonicParsing="false" onAction="#ShowTabPaneBtn" text="Done" />
          </children>
       </AnchorPane>
       <TabPane fx:id="TabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" visible="false">
