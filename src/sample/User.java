@@ -50,10 +50,7 @@ public class User {
         this.yearOfGraduation = yearOfGraduation;
         this.marks= new HashMap<>();
         this.levels= new HashMap<>();
-        //for (int i = 0; i <courses.length; i++) {
-        //    this.marks.put(courses [i],marks[i]);
-       //     this.levels.put(courses [i],levels[i]);
-       // }
+
     }
 
     public void saveUser (String name, String lastName, String mail, LocalDate yearOfGraduation){
@@ -61,11 +58,7 @@ public class User {
         this.lastName = lastName;
         this.mail = mail;
         this.yearOfGraduation = yearOfGraduation;
-        //for (int i = 0; i <courses.length; i++) {
-        //    this.marks.put(courses [i],marks[i]);
-        //    this.levels.put(courses [i],levels[i]);
-        //}
-        //save user to json file
+
     }
 
     //get

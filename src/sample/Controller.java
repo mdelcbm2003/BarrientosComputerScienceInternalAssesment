@@ -11,6 +11,7 @@ import javax.swing.*;
 import java.io.IOException;
 import java.util.ArrayList;
 
+// this is where I create the Choice Box, referring to each button connecting it to the GUI
 public class Controller {
     @FXML private ChoiceBox markButton1;
     @FXML private ChoiceBox markButton2;
@@ -35,6 +36,7 @@ public class Controller {
     @FXML private ChoiceBox hlStButton5;
     @FXML private ChoiceBox hlStButton6;
 
+    // Here I connect my coding with the GUI features, such as Text Field and Date Picker
     @FXML private TextField nameIn;
     @FXML private TextField lastNameIn;
     @FXML private TextField mailIn;
@@ -72,7 +74,7 @@ public class Controller {
                 //if this choice box is the same as any of the others, tell the user they already selected that course.
                 for (ChoiceBox cb: choices) {
                     if (c.getSelectionModel().getSelectedIndex() == cb.getSelectionModel().getSelectedIndex()){
-                        c.setValue("Already chosen, try agian");
+                        c.setValue("Already chosen, try again");
                     }
                 }
 
@@ -105,25 +107,6 @@ public class Controller {
         ArrayList<University> universities = new ArrayList<University>();
         universities.add(new University("Cambridge", 15000, "Lima"));
 
-            //adding universities and courses
-        //add the library to your project
-        //https://search.maven.org/artifact/com.google.code.gson/gson/2.8.6/jar
-
-
-        //1. create a new button in scene builder which we will use to create a university.
-            //use the dialog
-            //https://code.makery.ch/blog/javafx-dialogs-official/
-            //https://pastebin.com/znE0StuC
-
-        //2. do the same for the button to add courses.
-
-        //3. once you have created some courses and universities, you want to save this information
-        //to a json file.
-            //3.a add a button to save changes... or this could just be a method run each time
-        //you add a new course or university.
-
-
-
     }
 
 
@@ -153,17 +136,6 @@ public class Controller {
         MyInfoPane1.setVisible(false);
         MyInfoPane2.setVisible(false);
         TabPane.setVisible(true);
-
-        //this is the only button that takjes you from the info2 page to the tab page.
-
-
-
-
-        //1.read all the  infoo on the previous page. name,lastnmame,gmail, ugrduation date.
-        //2.read all of the check boxes.
-        //3. create a user with all of this infomration.
-        //4. save this information to the JSON file.
-
 
 
     }

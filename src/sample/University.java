@@ -2,6 +2,8 @@ package sample;
 
 import java.util.ArrayList;
 
+// This would be the different data the universities information will have.
+
 public class University {
     private final String NAME;
     private double tuition;

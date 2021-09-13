@@ -1,5 +1,6 @@
 package sample;
 
+// I was enumerating the different courses that the user could pick from.
 public enum ibCourses  {
     ENGLISH ("English"),
     SPANISH ("Spanish"),
@@ -14,6 +15,8 @@ public enum ibCourses  {
     MUSIC ("Music"),
     PSYCHOLOGY ("Psychology"),
     ECONOMICS ("Economics");
+
+
 
     private String courseName;
 
